@@ -1,0 +1,1 @@
+export const relayApi = 'https://api.graph.cool/relay/v1/cj5tnrhuifl0w0122o7euv7h9'
