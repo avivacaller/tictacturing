@@ -80,11 +80,20 @@
     ]
   },
   "babel": {
+    "plugins": ["react-relay"],
     "presets": [
       "react-app"
     ]
   },
+  "graphql":{
+    "request":{
+      "url": "https://api.graph.cool/relay/v1/cj5tnrhuifl0w0122o7euv7h9"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "babel-plugin-react-relay": "^0.10.0"
   }
 }
