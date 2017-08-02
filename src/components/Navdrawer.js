@@ -1,11 +1,11 @@
-import {Component} from 'react'
+import React, {Component} from 'react'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import Divider from 'material-ui/Divider'
 import FloatingActionButton from 'material-ui/FloatingActionButton'
 import Menu from 'material-ui/svg-icons/navigation/menu'
 
-export class NavDrawer extends Component{
+class NavDrawer extends Component{
     render(){
         return(
             <div>
@@ -16,3 +16,5 @@ export class NavDrawer extends Component{
         )
     }
 }
+
+export default NavDrawer
