@@ -3,6 +3,7 @@ import {
     Container, Name, GameListHeader, GameList, GameRecord,
     Column, ColumnLabels
 } from "../styled/Profile"
+import Relay from 'react-relay'
 
 class Profile extends Component {
 
@@ -86,4 +87,6 @@ Profile.defaultProps = {
         ]
     }
 }
+
+
 export default Profile

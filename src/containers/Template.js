@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import {Header, Main} from '../styled/Template'
-
+//import Relay from 'react-relay'
 import NavDrawer from '../components/NavDrawer'
 
 injectTapEventPlugin()
@@ -12,7 +12,9 @@ class Template extends Component{
         return(
             <MuiThemeProvider>
             <div>
-                <NavDrawer/>
+                <NavDrawer
+                    auth={this.props.route.auth}
+                />
                 <Header>
                     TicTacTuring
                 </Header>
@@ -24,5 +26,21 @@ class Template extends Component{
         )
     }
 }
-
 export default Template
+/*
+
+export default Relay.createFragmentContainer(
+    Template, {
+        fragments: {
+            viewer: () =>Relay.QL`
+        fragment on Viewer{
+        user{
+            id,
+        },
+        }
+        `,
+        }
+    },
+    );
+*/
+
